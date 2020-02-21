@@ -1,0 +1,630 @@
+
+*, *:before, *:after
+{
+	box-sizing: border-box;
+}
+button:focus{
+	outline:none;
+}
+body{
+	margin:0px;
+	font-family: sans-serif;
+
+
+}
+ 
+.container
+{
+	width:1828px;
+	 
+	margin-right: auto;
+	margin-left: auto;
+} 
+.main
+{
+	height: 100vh;
+	min-height: 600px;
+	background: url(../img/background.png)no-repeat center;
+	background-size: cover;
+
+	position:relative;
+
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+ 
+
+
+}
+
+.main-overlay
+{
+	z-index:0;
+	position:absolute;
+	left:0px;   top:0px;
+	opacity: .8;
+	width:100%;
+	height:100%;
+
+	background-image:-moz-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+	background-image:-webkit-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+	background-image:-ms-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+	 
+}
+.header{
+	z-index:1;
+	width:90%;
+	 height: 10vh;
+	 align-items: center;
+	display:flex;
+	justify-content: space-between;
+ 
+
+}
+.menu
+{
+	width:60%;
+}
+
+.menu ul
+{
+	display:flex;
+
+	flex-direction: row;
+	justify-content: space-around;
+}
+.menu-link
+{
+	color:#fff;
+	text-decoration: none; 
+}
+.get-started-btn
+{
+	margin-left:60px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	padding:15px 24px;
+	text-transform: uppercase;
+ }
+.main-text
+{  
+   position: relative;
+	z-index:2;
+	color:#fff;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	 
+	justify-content: space-between;
+}
+.main-text__name
+{
+font-family: "Maven Pro";
+font-size: 14px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "SOCIAL MAR" */
+letter-spacing: 0.7px;
+}
+.main-text__name::after{
+  
+ content:'';
+width:20px;
+height:1px;
+display:inline-block;
+ vertical-align: middle;
+margin-left:10px;
+background-color: #fff;
+z-index:2;
+}
+.main-text__name::before{
+  
+content:'';
+width:20px;
+height:1px;
+display:inline-block;
+vertical-align: middle;
+margin-right:10px;
+background-color: #fff;
+z-index:2;
+}
+.main-text__title
+{
+	color: #ffffff;
+font-family: "Maven Pro";
+font-size: 86px;
+font-weight: 500;
+line-height: 72px;
+/* Text style for "Pricing Ta" */
+letter-spacing: -2.42px;
+margin: 2rem;
+}
+.main-text__descr
+{
+	color: #ffffff;
+font-family: "Maven Pro";
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+.main-scroll
+{
+position: relative;
+	z-index: 2;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	 
+
+
+}
+.wrapp-scroll
+{ 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:50px;
+	width:50px;
+	text-align:center;
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+/*Секция table*/
+
+.table
+{
+	
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+	background-color: #f9fafc;
+	height:120vh;
+	min-height: 600px;
+	 
+ 
+
+}
+.table .table-text
+{
+    display:flex;
+    flex-direction: column;
+	align-items: center;
+}
+.table-text__name
+{
+color: #9fa4af;
+font-family: "Maven Pro";
+font-size: 14px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "MIsocial" */
+letter-spacing: 0.7px;
+}
+.table-text__name::before{
+  
+content:'';
+width:20px;
+height:1px;
+display:inline-block;
+vertical-align: middle;
+margin-right:10px;
+background-color: #9fa4af;
+ 
+}
+.table-text__name::after{
+  
+content:'';
+width:20px;
+height:1px;
+display:inline-block;
+vertical-align: middle;
+margin-left:10px;
+background-color: #9fa4af;
+ 
+}
+.table-text__title
+{
+	color: #4f4f6f;
+font-family: "Maven Pro";
+font-size: 60px;
+font-weight: 500;
+line-height: 72px;
+/* Text style for "Select a P" */
+letter-spacing: -1.69px;
+	margin:1.5rem;
+}
+.table-text__descr
+{
+display:inline-block;
+color: #9fa4af;
+font-family: "Maven Pro";
+font-size: 16px;
+width:400px;
+text-align: center;
+font-weight: 400;
+line-height: 28px;
+}
+
+
+
+
+
+.rate-wrapp
+{
+	
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	 width:100%;
+     margin-top:40px;
+	flex-direction: row;
+}
+.rate-card
+{
+	width:300px;
+    height:500px;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   
+    text-align:center;
+   justify-content: space-between;
+    padding:20px;
+	background-color: #fff;
+  border-radius: 20px;
+
+	}
+.rate-card:hover{
+   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 10.12px rgba(204, 204, 223, 0.71);
+   transition: 0.8s;
+	 
+}
+
+.rate-card__img
+{
+  display: inline-block;
+   min-height:108px;
+   min-width: 110px;
+
+}
+
+
+.rate-card__name
+{
+	color: #9fa4af;
+font-family: "Maven Pro";
+font-size: 14px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "personal" */
+letter-spacing: 0.7px;
+}
+.rate-card__title span
+{
+	color: #4f4f6f;
+	font-family: "Maven Pro";
+font-size: 18px;
+font-weight: 500;
+line-height: 72px;
+/* Text style for "0" */
+font-size: 60px;
+letter-spacing: -1.69px;
+/* Text style for "/month" */
+letter-spacing: -0.51px;
+
+}
+.rate-card__title sup
+{
+	color: #4f4f6f;
+font-family: "Maven Pro";
+font-size: 16px;
+font-weight: 500;
+line-height: 50.55px;
+/* Text style for "$" */
+letter-spacing: -0.64px;
+vertical-align: top;
+ 
+}
+.rate-card__title sub
+{
+	color: #4f4f6f;
+font-family: "Maven Pro";
+font-size: 16px;
+font-weight: 500;
+line-height: 50.55px;
+/* Text style for "$" */
+letter-spacing: -0.64px;
+vertical-align: button;
+ 
+}
+.rate-card__descr
+{
+	color: #9fa4af;
+font-family: "Maven Pro";
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+.rate-card__btn
+{  box-shadow: 0px 0px 5px 4px rgba(204, 204, 223, 0.71);
+	box-sizing: border-box;
+	padding:5px 30px;
+	color: #c2c9db;
+font-family: "Maven Pro";
+font-size: 12px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "select pla" */
+letter-spacing: 0.6px;
+background-color: #fff;
+border-radius: 22px;
+border:1px solid #c2c9db;
+text-transform: uppercase;
+}
+.rate-card__btn:hover
+{
+	cursor: pointer;
+	background-color: #6e45e2;
+	color:#fff;
+}
+
+
+.controll
+{
+ background: url(../img/map.png) no-repeat center;
+ background-size: cover;
+ position: relative;
+ height: 70vh;
+ display:flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+.controll-overlay
+{
+	z-index:0;
+	position:absolute;
+	left:0px;   top:0px;
+	opacity: .7;
+	width:100%;
+	height:100%;
+
+	background-image:-moz-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+	background-image:-webkit-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+	background-image:-ms-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+}
+.controll-text
+{
+	 position: relative;
+	z-index:2;
+	color:#fff;
+	 text-align: center;
+ 
+
+
+}
+.controll-text__name
+{   
+	 color: #ffffff;
+font-family: "Maven Pro";
+font-size: 14px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "SOCAL MARK" */
+letter-spacing: 0.7px;
+}
+.controll-text__title
+{
+	color: #ffffff;
+font-family: "Maven Pro";
+font-size: 60px;
+font-weight: 500;
+line-height: 72px;
+/* Text style for "Take contr" */
+letter-spacing: -1.69px;
+	margin:1.5rem;
+}
+
+.controll-text__btn
+{
+	 
+	box-sizing: border-box;
+	padding:5px 30px;
+	color: #c2c9db;
+font-family: "Maven Pro";
+font-size: 12px;
+font-weight: 700;
+line-height: 32px;
+text-transform: uppercase;
+/* Text style for "select pla" */
+letter-spacing: 0.6px;
+background-color: #fff;
+border-radius: 22px;
+border:1px solid #c2c9db;
+text-transform: uppercase;
+margin-left:20px;
+}
+.controll-text__btn:hover
+{
+	cursor: pointer;
+	background-color: #6e45e2;
+	color:#fff;
+
+}
+
+
+footer
+{
+display:flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+.footerNav
+{
+	z-index:1;
+	width:90%;
+	 height: 10vh;
+	 align-items: center;
+	display:flex;
+	justify-content: space-between;
+}
+ 
+.menu ul
+{
+	display:flex;
+     
+	flex-direction: row;
+	justify-content: space-around;
+}
+ 
+.menu-links
+{
+	  
+color: black;
+font-family: "Maven Pro";
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+/* Text style for "Home" */
+color: #6a6a77;
+	text-decoration: none; 
+}
+.menu-link:hover
+{
+	cursor: pointer;
+	 
+	color:#6e45e2;
+
+}
+.get-started-btn
+{background-color: #6e45e2;
+	color:#fff;
+	border:1px solid #6e45e2;
+	margin-left:60px;
+	 
+	border-radius: 30px;
+	padding:15px 24px;
+	text-transform: uppercase;
+ }
+ .coopyright::before
+{
+	  
+
+    content: '';
+	height:1px;
+ margin-top: 10px;
+	color:red;
+	 display:block;
+	background-color:  #6a6a77;;
+}
+ .coopyright
+ {
+
+ 	 width:90%;
+ }
+ .seconds
+ {
+ 	height:10vh;
+ 	display:flex;
+ align-items: center;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ }
+ .coopyright ul
+ {
+ 	display:flex;
+ 	width:8%;
+ 	justify-content: space-between;
+ }
+ .coopyright ul .img
+ {
+ 	height:15px;
+ 	width:15px;
+ }
+ .coopyright__text
+ {
+ 	opacity: 0.5;
+color: #6a6a77;
+font-family: "Maven Pro";
+font-size: 14px;
+font-weight: 500;
+line-height: 19px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .slider
+ {
+ 	 display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+width:100%;
+ height:70vh;
+ 
+ 	 
+ 	 
+ }
+ .photo
+ {  border:3px solid black;
+ 	 height:100%; 
+ 	display:flex;
+ 	justify-content: center;
+ 	align-items: center;
+  flex-basis: 25%
+
+ 
+ 
+ }
+ .photo:hover
+ {
+    display:flex;
+    justify-content: center;
+ 	align-items: center;
+    flex-basis: 50%; 
+    height:100%;	
+    transition: 0.3s;
+ }
+ .photo span{
+ 	color:white;
+ }
+  
+  .first
+  {
+  	background-color:#182838;
+  	 
+
+  }
+   .second
+  {
+  	background-color:#090909;
+  
+  }
+   .third
+  {
+  	background-color:#e90900;
+  	 
+  }
+   .fourth
+  {
+  	background-color:#423900;
+  	 
+  }
